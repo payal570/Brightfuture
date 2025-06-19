@@ -30,6 +30,13 @@ function pageScrollFunction(){
         homeSection.classList.remove('active');
     }
 }
+//notes popup
+function toggle(){
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active')
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('active')
+}
 
 // reference to buttons
 var btnLeft = document.getElementById('prev_btn');
