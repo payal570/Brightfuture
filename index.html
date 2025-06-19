@@ -10,8 +10,9 @@
 
 </head>
 <body>
+     <div class="container" id="blur">
     <!-- website container starts -->
-    <div class="website container">
+    <div class="website-container">
     
         <!-- home section starts -->
         <section class="home" id="home">
@@ -175,13 +176,20 @@
                       <div class="service-icon">
                         <i class=" fa-solid fa-book"></i>
                       </div>
-                      <div class="service-desc">
-                         <h2>Notes</h2>
-                         <p>Notes for revision</p>
+               <div class="service-desc">
+                         <h2>Content</h2>
+                         <p>content for revision</p>
                       </div>
-                      <a href="#" class="get-started-btn-container">
-                        <button class="get-started-btn btn">Notes</button>
-                      </a>
+                       <button class="get-started-btn btn">
+                            <a href="#services" onclick="toggle()" style="text-decoration: none; color: #1d1b1b;"><b>Notes</b></a>
+                        </button><br><br>
+                         <button class="get-started-btn btn">
+                            <a href="#services" onclick="toggle()" style="text-decoration: none; color: #1d1b1b;"><b>Questions</b></a>
+                        </button><br><br>
+                         <button class="get-started-btn btn">
+                            <a href="#services" onclick="toggle()" style="text-decoration: none; color: #1d1b1b;"><b>Mock Test</b></a>
+                        </button>
+                      
                   </div>
 
                   <div class="service-box">
@@ -398,7 +406,17 @@
        
     </div>
     <!-- website container ends -->
-
+          <div class="container" id="blur">
+  <div id="popup">
+        <h2>Notes of  Chemistry</h2>
+            <ul>
+                <li><a href="chemten.html">Class 10</a></li>
+                <li><a href="#">Maths</a></li>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Chemistry</a></li>
+            </ul><br>
+                <button class="get-started-btn btn" style="border: solid; text-decoration: none;"><a href="#services" onclick="toggle()"><b>close</b></a></button>
+  </div>
     
     <!-- link to custom script file -->
      <script type="text/javascript" src="script.js"></script>
