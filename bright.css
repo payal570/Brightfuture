@@ -66,6 +66,11 @@ body{
     width: 100%;
     min-height: 100vh;
 }
+.container#blur.active{
+    filter:blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
 .website-container{
     width: 100%;
     max-width: 1400px;
@@ -481,6 +486,25 @@ section.home{
 /* slider styling ends */
 
 /* services section styling starts */
+#popup{
+    position:fixed;
+    top:30%;
+    left: 30%;
+    transition:translate(-50%, -50%);
+    width: 600px;
+    padding:50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: var(--primary-clr);
+    visibility: hidden;
+    opacity: 0;
+    transition:0.5s;
+}
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition:0.5s;
+    top: 30%;
+}
 section.services{
     width: 100%;
     padding: 100px 8% 20px;
@@ -960,6 +984,14 @@ color: yellow;
    .footer-contents .footer-col{
     flex-basis: calc(calc(100% / 2) - 20px);
  }
+ #popup{
+    position:fixed;
+    top:30%;
+    left: 20%;
+    /* transition:translate(-50%, -50%); */
+    width: 300px;
+    padding:50px;
+}
 }
 
 @media(max-width: 768px){
@@ -982,6 +1014,14 @@ color: yellow;
    .courses .course-contents .courses-cards{
     flex-basis: 100%;
    }
+ #popup{
+    position:fixed;
+    top:30%;
+    left: 10%;
+    /* transition:translate(-50%, -50%); */
+    width: 200px;
+    padding:50px;
+}
  }
 
 @media(max-width: 568px){
