@@ -270,38 +270,7 @@ section.home{
     width: 100%;
     height: auto;
 }
-/* .banner-img .banner-img-container .states{
-    position:absolute;
-    width: 100px;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-.banner-img .banner-img-container .states .total-courses{
-    position: absolute;
-    padding: 6px 10px 6px 6px;
-    background-color: var(--light-heading-clr);
-    border-radius: 5px;
-    bottom: 20%;
-    left: -80px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
-}
-.states .total-courses .icon{
-    width: 37px;
-    height: 37px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-clr);
-    margin-right: 7px;
-}
-.states .total-courses .icon i{
-    font-size: 20px;
-    color: var(--light-heading-clr);
-} */
+
 .states .total-courses .desc{
     display: flex;
     flex-direction: column;
@@ -504,6 +473,17 @@ section.home{
     opacity: 1;
     transition:0.5s;
     top: 30%;
+}
+#popup li a{
+    text-decoration: none;
+    padding: 4px;
+    margin: 3px;
+    font-size: 20px;
+    color: #e8f9ef;
+}
+#popup li{
+    padding: 4px;
+    margin: 3px;
 }
 section.services{
     width: 100%;
@@ -992,13 +972,13 @@ color: yellow;
     width: 300px;
     padding:50px;
 }
+#popup h2{
+    font-size: 10px;
+}
 }
 
 @media(max-width: 768px){
-    /* .banner-img-container .states .total-courses{
-        left: 5px;
-        bottom: 10%;
-    } */
+  
     .banner .banner-desc h2{
         font-size: 42px;
     }
