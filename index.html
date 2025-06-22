@@ -180,15 +180,51 @@
                          <h2>Content</h2>
                          <p>content for revision</p>
                       </div>
-                       <button class="get-started-btn btn">
-                            <a href="#services" onclick="toggle()" style="text-decoration: none; color: #1d1b1b;"><b>Notes</b></a>
-                        </button><br><br>
-                         <button class="get-started-btn btn">
-                            <a href="#services" onclick="toggle()" style="text-decoration: none; color: #1d1b1b;"><b>Questions</b></a>
-                        </button><br><br>
-                         <button class="get-started-btn btn">
-                            <a href="#services" onclick="toggle()" style="text-decoration: none; color: #1d1b1b;"><b>Mock Test</b></a>
-                        </button>
+                       <button class="modal-open" data-modal="modal1">Notes</button>
+                  <button class="modal-open" data-modal="modal2">Questions</button>
+                  <button class="modal-open" data-modal="modal3">Mock Test</button>
+
+                  <div class="modal" id="modal1">
+                     <div class="modal_content">
+                         <div class="modal_header">Notes
+                            <button class="icons modal-close"><i class="fa-solid fa-circle-xmark"></i></button>
+                         </div>
+                         <div class="modal_body"> 
+                            <ul>
+                             <li><a href="chemten.html">Class 10</a></li>
+                             <li><a href="#">Maths</a></li>
+                             <li><a href="#">Physics</a></li>
+                             <li><a href="#">Chemistry</a></li>
+                          </ul>
+                        </div>
+                         <div class="modal_footer"><button class="link modal-close">close</button></div>
+                      </div>
+                    </div>
+
+                    <div class="modal" id="modal2">
+                     <div class="modal_content">
+                         <div class="modal_header">Questions
+                            <button class="icons modal-close"><i class="fa-solid fa-circle-xmark"></i></button>
+                         </div>
+                         <div class="modal_body"> <ul>
+                             <li><a href="chemten.html">Class 10</a></li>
+                             <li><a href="#">Maths</a></li>
+                             <li><a href="#">Physics</a></li>
+                             <li><a href="#">Chemistry</a></li>
+                          </ul>.</div>
+                         <div class="modal_footer"><button class="link modal-close">close</button></div>
+                      </div>
+                    </div>
+
+                    <div class="modal" id="modal3">
+                     <div class="modal_content">
+                         <div class="modal_header">modal 3
+                            <button class="icons modal-close"><i class="fa-solid fa-circle-xmark"></i></button>
+                         </div>
+                         <div class="modal_body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nisi eos magnam, quos natus est autem unde ut hic, cum obcaecati alias eum ea quisquam quod esse? Excepturi, quae iusto.</div>
+                         <div class="modal_footer"><button class="link modal-close">close</button></div>
+                      </div>
+                    </div>
                       
                   </div>
 
@@ -330,15 +366,25 @@
                 <div class="category">
                     <div class="name"><h3>Krish Mittal</h3></div>
                 </div>
-                  <h2 class="teachers-title"><i class="fa-solid fa-graduation-cap"></i>  Class- 10th</h2>
+                  <h2 class="teachers-title" style="padding-bottom: 8px;"><i class="fa-solid fa-graduation-cap"></i>  Class- 10th</h2>
+                 <h2 class="teachers-title"><i class="fa-solid fa-marker"></i>  Percentage- 96.2%</h2>
                 </div>
             <div class="teachers-cards">
                <img src="arnav-singla-grade.jpg">
                <div class="category">
                    <div class="name"><h3>Arnav Singla</h3></div>
                </div>
-                <h2 class="teachers-title"><i class="fa-solid fa-graduation-cap"></i>  Class- 10th</h2>
+                <h2 class="teachers-title" style="padding-bottom: 8px;"><i class="fa-solid fa-graduation-cap"></i>  Class- 10th</h2>
+                 <h2 class="teachers-title"><i class="fa-solid fa-marker"></i>  Percentage- 95.8%</h2>
             </div>
+              <div class="teachers-cards">
+                 <img src="Harsh singla.jpeg">
+                 <div class="category">
+                     <div class="name"><h3>Harsh Singla</h3></div>
+                  </div>
+                 <h2 class="teachers-title" style="padding-bottom: 8px;"><i class="fa-solid fa-graduation-cap"></i>  Class- 10th</h2>
+                 <h2 class="teachers-title"><i class="fa-solid fa-marker"></i>  Percentage- 96.4%</h2>
+              </div>
          </div>
          <!-- testimonials content ends -->
       </section>
