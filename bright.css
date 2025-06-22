@@ -455,35 +455,94 @@ section.home{
 /* slider styling ends */
 
 /* services section styling starts */
-#popup{
-    position:fixed;
-    top:30%;
-    left: 30%;
-    transition:translate(-50%, -50%);
-    width: 600px;
-    padding:50px;
-    box-shadow: 0 5px 30px rgba(0,0,0,.30);
-    background: var(--primary-clr);
-    visibility: hidden;
-    opacity: 0;
-    transition:0.5s;
+.modal-open{
+    padding: 8px 16px;
+    background-color: var(--primary-clr);
+    color: var(--light-heading-clr);
+    /* background: royalblue;
+    color: white; */
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
 }
-#popup.active{
-    visibility: visible;
-    opacity: 1;
-    transition:0.5s;
-    top: 30%;
+.modal-open:hover{
+    background-color: var(--light-heading-clr);
+    color: var(--primary-clr);
+    border: 1px solid var(--primary-clr);
 }
-#popup li a{
+ .modal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top:0%;
+    left: 0%;
+    z-index: 2;
+    display: none;
+    animation: modal-open .5s;
+}
+
+.modal .modal_content{
+    width: 50%;
+    background: #fff;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    border-radius: 4px;
+    z-index: 4;
+} 
+.modal_header{
+    font-weight: 500;
+    padding: 10px 0;
+    font-size: 26px;
+    margin-left: 20px;
+    cursor: auto;
+}
+.modal_body{
+    margin-left: 30px;
+}
+.modal_body li{
+    padding: 10px;
+}
+.modal_body li a{
     text-decoration: none;
-    padding: 4px;
-    margin: 3px;
     font-size: 20px;
-    color: #e8f9ef;
+    color: #232d39;
 }
-#popup li{
-    padding: 4px;
-    margin: 3px;
+.modal_header .modal-close{
+    float: right;
+    font-size: 20px;
+    background: #efefef;
+    border: 0;
+    outline: 0;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+.modal_body{
+    color: #7b7b7b;
+    padding: 15px 0;
+}
+.modal_footer{
+    padding: 15px 0;
+    margin-left: 10px;
+}
+.modal_footer .modal-close{
+    padding: 8px 16px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #457745;
+}
+@keyframes modal-open{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 section.services{
     width: 100%;
@@ -964,17 +1023,6 @@ color: yellow;
    .footer-contents .footer-col{
     flex-basis: calc(calc(100% / 2) - 20px);
  }
- #popup{
-    position:fixed;
-    top:30%;
-    left: 20%;
-    /* transition:translate(-50%, -50%); */
-    width: 300px;
-    padding:50px;
-}
-#popup h2{
-    font-size: 10px;
-}
 }
 
 @media(max-width: 768px){
@@ -994,14 +1042,6 @@ color: yellow;
    .courses .course-contents .courses-cards{
     flex-basis: 100%;
    }
- #popup{
-    position:fixed;
-    top:30%;
-    left: 10%;
-    /* transition:translate(-50%, -50%); */
-    width: 200px;
-    padding:50px;
-}
  }
 
 @media(max-width: 568px){
