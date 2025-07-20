@@ -54,6 +54,20 @@ window.onclick = function(e){
         e.target.style.display = "none";
     }
 };
+ var div = document.getElementById('sheet');
+    var display = false;
+
+    function formula(){
+   if(display)
+      {
+        div.style.display = 'none';
+         display = false;
+      } 
+     else{
+          div.style.display = 'block';
+          display = true;
+        }
+    };
 
 // reference to buttons
 var btnLeft = document.getElementById('prev_btn');
