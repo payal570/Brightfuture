@@ -68,6 +68,14 @@ window.onclick = function(e){
           display = true;
         }
     };
+ function openSection(sectionId) {
+  const sections = document.querySelectorAll('.subject-section');
+  sections.forEach(section => {
+    section.style.display = 'none';
+  });
+
+  document.getElementById(sectionId).style.display = 'block';
+}
 
 // reference to buttons
 var btnLeft = document.getElementById('prev_btn');
