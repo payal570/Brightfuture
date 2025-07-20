@@ -197,11 +197,75 @@
                         </div>
                          <h3 class="sheet" onclick = "formula()">Formula Sheet for Class 11-12 & IIT-JEE/NEET</h3>
                            <div class="sheetbtn" style="display: none;" id="sheet"> 
-                            <button class="tab-button"><a href="#">Physics</a></button>
-                            <button class="tab-button"><a href="#">Chemistry</a></button>
-                            <button class="tab-button"><a href="#">Math</a></button>
-                            <button class="tab-button"><a href="#">Biology</a></button>
-                        </div>  
+                             <button class="tab-button" onclick="openSection('physics')">Physics</button>
+                                 <button class="tab-button" onclick="openSection('chemistry')">Chemistry</button>
+                                 <button class="tab-button" onclick="openSection('math')">Math</button>
+                                 <button class="tab-button" onclick="openSection('biology')">Biology</button>
+                            </div>
+                            <div id="physics" class="subject-section" style="display: none;" id="sheet">
+                                <h2>Physics</h2>
+                                <details>
+                                    <summary>Class 11</summary>
+                                     <a href="#">Class 11 Physics</a>
+                                </details>
+                                <details>
+                                    <summary>Class 12</summary>
+                                    <a href="#">Class 12 Physics</a>
+                                </details>
+                                <details>
+                                    <summary>IIT-JEE/NEET</summary>
+                                    <a href="#">IIT-JEE/NEET</a>
+                                </details>
+                            </div>
+
+                            <div id="chemistry" class="subject-section" style="display:none;">
+                                <h2>Chemistry</h2>
+                                <details>
+                                    <summary>Class 11</summary>
+                                     <a href="#">Class 11 Chemistry</a>
+                                </details>
+                                <details>
+                                    <summary>Class 12</summary>
+                                    <a href="#">Class 12 Chemistry</a>
+                                </details>
+                                <details>
+                                    <summary>IIT-JEE/NEET</summary>
+                                    <a href="#">IIT JEE/NEET Chemistry</a>
+                                </details>
+                            </div>
+
+                            <div id="math" class="subject-section" style="display:none;">
+                                <h2>Math</h2>
+                                <details>
+                                    <summary>Class 11</summary>
+                                     <a href="#">Class 11 Maths</a>
+                                </details>
+                                <details>
+                                    <summary>Class 12</summary>
+                                    <a href="#">Class 12 Maths</a>
+                                </details>
+                                <details>
+                                    <summary>IIT-JEE/NEET</summary>
+                                     <a href="#">IIT JEE/NEET Maths</a>
+                                </details>
+                            </div>
+
+                            <div id="biology" class="subject-section" style="display:none;">
+                                <h2>Biology</h2>
+                                <details>
+                                    <summary>Class 11</summary>
+                                     <a href="#">Class 11 Biology</a>
+                                </details>
+                                <details>
+                                    <summary>Class 12</summary>
+                                     <a href="#">Class 12 Biology</a>
+                                </details>
+                                <details>
+                                    <summary>IIT-JEE/NEET</summary>
+                                     <a href="#">IIT JEE/NEET Biology</a>
+                                </details>
+                             </div>
+
                          <div class="modal_footer"><button class="link modal-close">close</button></div>
                       </div>
                     </div>
