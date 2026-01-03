@@ -912,7 +912,8 @@ section.testimonials{
     flex-direction: column;
  }
  .footer-col .col-contents img{
-  width: 120px;
+     width: 120px;
+     height:85px;
  }
  .footer-col-1 .col-contents p{
     color: var(--light-text-clr);
@@ -1115,5 +1116,6 @@ color: yellow;
     }
 }
 /* media query ends */
+
 
 
