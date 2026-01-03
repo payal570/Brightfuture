@@ -117,8 +117,8 @@ section.home{
      text-decoration: none;
 }
 .main-navbar .logo img{
-    width: 120px;
-    height: auto;
+    width: 100px;
+    height: 85px;
 }
 .main-navbar .nav-list{
     list-style: none;
@@ -1115,3 +1115,4 @@ color: yellow;
     }
 }
 /* media query ends */
+
